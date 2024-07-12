@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1f1d1d;
+}
+
+h1{
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+
+
+}
+h1:hover{
+  box-shadow:  0 0 0 3px #feffff,
+  0 0 0 6px #04bffe33,
+  0 0 0 9px #04bffe22,
+  0 0 0 12px #04bffe11,
+  0 0 0 15px #04c0fe00;
+
+}
+.container {
+  display: grid;
+  width: 300px;
+  height: 430px;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  background-color: transparent;
+  gap: 8px;
+  border: 2px solid rgba(232, 222, 222, 0.797);
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 45px;
+  animation: animate 2s 1s 5 alternate-reverse;
+  padding: 18px 10px;
+}
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 5px #04bffe, 0 0 0 10px #04bffe33, 0 0 0 15px #04bffe22,
+    0 0 0 20px #04bffe11, 0 0 0 25px #04bffe01;
+  }
+  50% {
+  
+    box-shadow: 0 0 0 3px #feffff, 0 0 0 6px #04bffe33, 0 0 0 9px #04bffe22,
+    0 0 0 12px #04bffe11, 0 0 0 15px #04c0fe00;
+  }
+  100% {
+  
+    box-shadow: 0 0 0 5px #474747, 0 0 0 10px #04bffe33, 0 0 0 15px #04bffe22,
+      0 0 0 20px #04bffe11, 0 0 0 25px #04c0fe00;
+  }
+}
+.container:hover {
+  box-shadow: 0 0 0 3px #474747, 0 0 0 6px #04bffe33, 0 0 0 9px #04bffe22,
+    0 0 0 12px #04bffe11, 0 0 0 15px #04c0fe00;
+}
+.container input {
+  grid-column: 1/5;
+  font-size: 24px;
+}
+.container button {
+  /* width: 50px;
+    height: 50px; */
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+  border: 0px solid grey;
+  font-size: 28px;
+  cursor: pointer;
+}
+.mBtn {
+  color: rgb(251, 251, 251);
+  background-color: rgb(26, 22, 22);
+}
+.mBtn:hover {
+  color: rgb(255, 161, 10);
+  background-color: grey;
+  box-shadow: 0 0 0 3px #feffff, 0 0 0 6px #04bffe33, 0 0 0 9px #04bffe22,
+    0 0 0 12px #04bffe11, 0 0 0 15px #04c0fe00;
+}
+.btn {
+  background-color: rgb(255, 161, 10);
+}
+.btn:hover {
+  background-color: rgba(255, 166, 0, 0.923);
+  color: white;
+  box-shadow: 0 0 0 3px #feffff, 0 0 0 6px #04bffe33, 0 0 0 9px #04bffe22,
+    0 0 0 12px #04bffe11, 0 0 0 15px #04c0fe00;
+}
+.operator {
+  background-color: rgb(225, 0, 255);
+  font-size: 34px;
+}
+.operator:hover {
+  /* background-color: rgb(249, 152, 242); */
+  color: white;
+  box-shadow: 0 0 0 3px #474747, 0 0 0 6px #04bffe33, 0 0 0 9px #04bffe22,
+    0 0 0 12px #04bffe11, 0 0 0 15px #04c0fe00;
+}
