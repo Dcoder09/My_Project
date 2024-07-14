@@ -13,6 +13,35 @@ navLinks.addEventListener("click", (e)=>{
     menuBtnIcon.setAttribute("src", "menu.svg")
 
 })
+let scrollRevealOption = {
+    distance:"50px",
+    origin:"bottom",
+    duration: 3000,
+};
+scrollReveal().reveal(".header_image img", {
+    ...scrollRevealOption,
+    origin:"right",
+});
+scrollReveal().reveal(".header_content h1", {
+    ...scrollRevealOption,
+    delay:500,
+});
+scrollReveal().reveal(".header_content p", {
+    ...scrollRevealOption,
+    delay:500,
+});
+scrollReveal().reveal(".header_content form", {
+    ...scrollRevealOption,
+    delay:500,
+});
+scrollReveal().reveal(".header_content .bar", {
+    ...scrollRevealOption,
+    delay:500,
+});
+scrollReveal().reveal(".header_content h1", {
+    ...scrollRevealOption,
+    delay:500,
+});
 
 
 
