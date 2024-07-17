@@ -91,7 +91,7 @@ nav{
     padding-inline: 1rem;
     display: grid;
     gap: 2rem;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 .header_img{
@@ -121,9 +121,10 @@ nav{
     margin-inline: auto;
 }
 #girl-png{
-    opacity: .1;
+    
     position: relative;
     z-index: 1;
+    padding-inline: 6rem 0px;
 
 }
 .header_card_img{
@@ -138,10 +139,36 @@ nav{
     background-color: var(--white);
     white-space: nowrap;
     border-radius: 5px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,.2);
-    z-index: 1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+    z-index: 2;
     
 }
+.header_card_img:hover{
+    box-shadow: 5px 5px 20px rgb(10, 30, 255,.8);
+    color: var(--primary-color);
+
+}
+svg{
+    color: var(--primary-color);
+}
+.header_img .header_card_img:hover svg{
+    color: white;
+    fill: var(--primary-color);
+} 
+.header_img .header_card4:hover svg{
+    color:var(--primary-color);
+    fill: var(--primary-color);
+} 
+.header_img .header_card_img:hover .header_card4 svg circle{
+    color:var(--primary-color);
+    fill: var(--primary-color);
+}
+.header_img .header_card4:hover svg path{
+    color: var(--primary-color-dark);
+    fill: none;
+}
+
+
 
 .header_card1{
     top: 25%;
@@ -149,6 +176,11 @@ nav{
     transform: translate(-13%,-50%);
 
 }
+/* .header_card1:hover{
+    color: var(--primary-color);
+    background-color: aqua;
+} */
+
 .header_card2{
     top: 20%;
     right: 2rem;
@@ -249,6 +281,10 @@ nav{
     transition: .3s;
     cursor: pointer;
 
+}
+.header_content form:hover svg{
+    color: white;
+    fill: var(--primary-color);
 }
 .header_content button:hover{
     background-color: var(--primary-color-dark);

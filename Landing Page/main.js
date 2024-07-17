@@ -14,34 +14,31 @@ navLinks.addEventListener("click", (e)=>{
 
 })
 let scrollRevealOption = {
-    distance:"50px",
+    distance:"150px",
     origin:"bottom",
-    duration: 3000,
+    duration: 1000,
 };
-scrollReveal().reveal(".header_image img", {
+ScrollReveal().reveal(".header_img>img", {
     ...scrollRevealOption,
     origin:"right",
 });
-scrollReveal().reveal(".header_content h1", {
+ScrollReveal().reveal(".header_content h1", {
     ...scrollRevealOption,
     delay:500,
 });
-scrollReveal().reveal(".header_content p", {
+ScrollReveal().reveal(".header_content p", {
     ...scrollRevealOption,
-    delay:500,
+    delay:1000,
 });
-scrollReveal().reveal(".header_content form", {
+ScrollReveal().reveal(".header_content form", {
     ...scrollRevealOption,
-    delay:500,
+    delay:1500,
 });
-scrollReveal().reveal(".header_content .bar", {
+ScrollReveal().reveal(".footer", {
     ...scrollRevealOption,
-    delay:500,
+    delay:2000,
 });
-scrollReveal().reveal(".header_content h1", {
-    ...scrollRevealOption,
-    delay:500,
-});
+
 
 
 
